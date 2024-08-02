@@ -1,0 +1,136 @@
+.rank{
+    width: 100%;
+    min-height: 400px;
+}
+.rank .rank_inner{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 56px;
+    height: 100%;
+}
+.rank .rank_inner .arres_area{
+    width: fit-content;
+    margin: 0 auto;
+}
+.content{
+    margin: 110px auto 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .box{
+    width: 277.5px;
+    min-height: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+.content .box h2{
+    font-weight: 700;
+    font-size: 71px;
+    color: #fff;
+    line-height: 72px;
+}
+.content .box p{
+    margin-top: 22px;
+
+    font-weight: 400;
+    font-size: 17px;
+    color: #B7B4BB;
+}
+.bottom_arres_area{
+    width: fit-content;
+    margin: 110.59px auto 0 auto;
+}
+.ethereum_icon{
+    position: absolute;
+    right: 273px;
+    top: 134px;
+    transform: translateY(0px) rotate(0deg);
+    animation: shake 3s cubic-bezier(0.59, 0.32, 0.4, 0.94) infinite;
+}
+.botcoin_icon{
+    position: absolute;
+    left: 220px;
+    bottom: 40px;
+    transform: translateY(0px) rotate(0deg);
+    animation: shake 3s cubic-bezier(0.59, 0.32, 0.4, 0.94) infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translateY(0px) rotate(0deg);
+    }
+    50%{
+        transform: translateY(-15px) rotate(-30deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@media screen and (max-width: 1090px) {
+    .content {
+        gap: 10px;
+    }
+    .content .box{
+        width: fit-content;
+    }
+    .content .box h2{
+        font-size: 64px;
+    }
+    .content .box p{
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content {
+        gap: 5px;
+    }
+    .content .box h2{
+        font-size: 58px;
+    }
+}
+@media screen and (max-width: 710px){
+    .content {
+        flex-direction: column;
+    }
+    .content .box {
+        width: 100%;
+    }
+    .content .box h2{
+        font-size: 58px;
+    }
+
+    .ethereum_icon{
+        right: 123px;
+        top: 159px;
+    }
+    .botcoin_icon{
+        left: 35px;
+        bottom: 97px;
+    }
+}
+@media screen and (max-width: 480px){
+    .content .box h2{
+        font-size: 56px;
+    }
+    .content .box p{
+        margin-top: 14px;
+    }
+
+    .ethereum_icon{
+        right: 40px;
+        top: 175px;
+    }
+    .botcoin_icon{
+        left: 16px;
+        bottom: 126px;
+    }
+    
+}

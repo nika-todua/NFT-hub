@@ -1,0 +1,36 @@
+.partnership {
+  width: 100%;
+  height: auto;
+}
+
+.partnership .partnership_inner {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.partnership .partnership_inner .box {
+  position: relative;
+  max-width: 999px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.partnership .partnership_inner .arrow_area{
+    margin: 120px auto 0 auto;
+    width: fit-content;
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .partnership .partnership_inner .box {
+    gap: 30px;
+    justify-content: center;
+  }
+  .partnership .partnership_inner .box .box_item svg{
+    width: 150px;
+    height: 37px;
+  }
+}

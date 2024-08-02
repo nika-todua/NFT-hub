@@ -1,0 +1,30 @@
+header{
+    position: fixed;
+    z-index: 999;
+}
+.main{
+    position: relative;
+    padding-top: 80px;
+    width: 100%;
+    min-height: 529px;
+}
+.cont{
+    margin: 0 auto;
+    width: 90% !important;
+}
+app-darkmode{
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 998;
+    border-radius: 50%;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: #0F051D;
+}
+footer{
+    width: 100%;
+    height: auto;
+}

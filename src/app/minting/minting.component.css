@@ -1,0 +1,130 @@
+.minting{
+    position: relative;
+    padding-top: 49.99px;
+    width: 100%;
+    height: auto;
+    min-height: 633.59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg_img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.bg_img img{
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.container{
+    width: 585px;
+    min-height: 100px;
+    z-index: 99;
+}
+.container .title{
+    margin-bottom: 24px;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    color: #fff;
+}
+.container .title span{
+    background: -webkit-linear-gradient(#2600FC, #FF00EA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.container p{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #B7B4BB;
+}
+.btn{
+    position: relative;
+    margin: 45.6px auto 0 auto;
+
+    width: 213.42px;
+    height: 62px;
+
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#2600FC, #FF00EA);
+
+    display: flex;
+    gap: 8.42px;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 450px;
+    }
+    .container .title{
+        font-size: 74px;
+        line-height: 74px;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .btn{
+        margin: 40px auto 0 auto;
+    }
+}
+@media screen and (max-width: 880px) {
+    .container {
+        width: 90%;
+        max-width: 415px;
+    }
+    .container .title{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .btn{
+        margin: 35px auto 0 auto;
+    }
+}
+@media screen and (max-width: 680px) {
+    .container {
+        width: 90%;
+        max-width: 415px;
+    }
+    .container .title{
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .container {
+        max-width: 380px;
+    }
+    .container .title{
+        font-size: 46px;
+        line-height: 46px;
+    }
+    .btn{
+        width: 202.16px;
+        height: 62px;
+        font-size: 16px;
+    }
+}

@@ -37,9 +37,12 @@
               }
             ],
             "styles": [
+              "public/splide/dist/css/splide.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "public/splide/dist/js/splide.min.js"
+            ]
           },
           "configurations": {
             "production": {

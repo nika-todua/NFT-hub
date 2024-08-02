@@ -1,0 +1,307 @@
+.nevermoss {
+  width: 100%;
+  height: auto;
+  /* background-color: red; */
+}
+
+.nevermoss .nevermoss_inner {
+  margin: 0 auto;
+  padding-top: 130px;
+  height: 100%;
+  /* background-color: green; */
+}
+
+.right-top-svg svg,
+.right-bottom-svg svg,
+.left-bottom-svg svg,
+.top-left_svg svg {
+  display: block;
+  pointer-events: none !important;
+}
+
+.top-left_svg {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+
+  animation: shake 3s linear infinite;
+}
+
+.left-bottom-svg {
+  position: absolute;
+  left: 150px;
+  bottom: 40px;
+  animation: shake 2.8s linear infinite;
+}
+
+.right-top-svg {
+  position: absolute;
+  top: 80px;
+  right: 70px;
+  animation: shake 3s linear infinite;
+}
+
+.right-bottom-svg {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  animation: shake 3s linear infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(-25deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.nevermoss .nevermoss_inner .nevermoss_content {
+  position: relative;
+  padding: 61px 57px;
+  margin: 0 auto 130px auto;
+  max-width: 1200px;
+  width: 100%;
+
+  border-radius: 32px;
+  border: 1.5px solid rgba(243, 243, 243, 0.25);
+  background-color: transparent;
+}
+
+.nevermoss_inner .nevermoss_content .card_title {
+  width: 100%;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 64px;
+  font-size: 64px;
+  color: #fff;
+}
+
+.nevermoss_inner .nevermoss_content .card_title span {
+  background: -webkit-linear-gradient(#2600FC, #FF00EA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nevermoss_inner .nevermoss_content .card_info {
+  margin-top: 19px;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: #B7B4BB;
+}
+
+.nevermoss_inner .nevermoss_content .subscribe_form {
+  margin: 36px auto 0 auto;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+.nevermoss_inner .nevermoss_content .subscribe_form input {
+  padding-inline: 25px;
+  width: 376.72px;
+  height: 47px;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgba(246, 242, 242, 0.19);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #B7B4BB;
+}
+
+.nevermoss_inner .nevermoss_content .subscribe_form input::placeholder {
+  color: #B7B4BB;
+}
+
+.nevermoss_inner .nevermoss_content .subscribe_form button {
+  width: 123.28px;
+  height: 47.19px;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: linear-gradient(#2600FC, #FF00EA);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bottom_arrew {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .top-left_svg {
+    top: 90px;
+    left: 60px;
+  }
+
+  .left-bottom-svg {
+    left: 110px;
+    bottom: 40px;
+  }
+
+  .right-top-svg {
+    top: 80px;
+    right: 50px;
+  }
+
+  .right-bottom-svg {
+    right: 35px;
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .top-left_svg {
+    top: 70px;
+    left: 60px;
+  }
+
+  .left-bottom-svg {
+    left: 70px;
+    bottom: 40px;
+  }
+
+  .right-top-svg {
+    top: 70px;
+    right: 50px;
+  }
+
+  .right-bottom-svg {
+    right: 30px;
+    bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .top-left_svg {
+    top: 75px;
+    left: 35px;
+  }
+
+  .left-bottom-svg {
+    left: 25px;
+    bottom: 45px;
+  }
+
+  .right-top-svg {
+    top: 75px;
+    right: 30px;
+  }
+
+  .right-bottom-svg {
+    right: 25px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .right-bottom-svg svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .nevermoss_inner .nevermoss_content .card_title {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .nevermoss_inner .nevermoss_content .subscribe_form {
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nevermoss_inner .nevermoss_content .subscribe_form input {
+    width: 330px;
+    height: 47px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .top-left_svg {
+    top: 70px;
+    left: 30px;
+  }
+
+  .left-bottom-svg {
+    left: 20px;
+    bottom: 30px;
+  }
+
+  .right-top-svg {
+    top: 70px;
+    right: 25px;
+  }
+
+  .right-bottom-svg {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .top-left_svg {
+    top: 110px;
+    left: 20px;
+  }
+
+  .left-bottom-svg {
+    left: 20px;
+    bottom: 30px;
+  }
+
+  .right-top-svg {
+    top: 100px;
+    right: 15px;
+  }
+
+  .right-bottom-svg {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nevermoss_inner .nevermoss_content {
+    padding: 41px 31px !important;
+  }
+
+  .nevermoss_inner .nevermoss_content .subscribe_form {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    z-index: 2;
+  }
+
+  .nevermoss_inner .nevermoss_content .subscribe_form input {
+    width: 100%;
+    max-width: 330px;
+    height: 47px;
+  }
+}

@@ -1,0 +1,147 @@
+.collection{
+    position: relative;
+    padding-top: 120px;
+    width: 100%;
+    height: auto;
+}
+.collection .collection_inner{
+    padding-bottom: 130px;
+    margin: 0 auto;
+    height: 100%;
+}
+.collection .collection_inner h2{
+    width: 100%;
+    text-align: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+}
+.collection .collection_inner h2 span{
+    background: -webkit-linear-gradient(#2600FC, #FF00EA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.collection .collection_inner .carousel_box{
+    position: relative;
+    margin-top: 65px;
+    max-height: 502px;
+    width: 100%;
+    height: auto;
+
+}
+.myslider{
+    width: 100%;
+    height: 502px;
+    max-height: 502px;
+
+}
+.splide__track{
+    height: 502px;
+    max-height: 502px;
+
+}
+.splide__list{
+    max-height: 502px;
+}
+.splide__slide{
+    height: 502px;
+    max-height: 502px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.splide__arrow{
+    transform: translateY(-80px) !important;
+}
+.mycard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.splide__slide .card_img_box{
+    width: 264px;
+    height: 352px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.splide__slide .card_img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.splide__slide .card_title{
+    margin-top: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 28px;
+    color: #fff;
+}
+.splide__slide .card_info{
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #B7B4BB;
+}
+.collection .collection_inner .btn{
+    margin: 80px auto 0 auto;
+    width: 240.3px;
+    height: 64px;
+    background: linear-gradient(#2600FC, #FF00EA);
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    gap: 11.75px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+}
+@media screen and (max-width: 1100px) {
+    .collection .collection_inner h2{
+        font-size: 54px;
+        line-height: 54px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .collection .collection_inner h2{
+        font-size: 46px;
+        line-height: 46px;
+    }
+}
+@media screen and (max-width: 815px){
+    .splide__slide .card_title{
+        font-size: 24px;
+    }
+} 
+@media screen and (max-width: 768px) {
+    .collection .collection_inner h2{
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .splide__slide {
+        height: 460px;
+        max-height: 460px;
+    }
+
+    .collection .collection_inner .btn{
+        width: 206.05px;
+        height: 60px;
+        font-size: 15px;
+    }
+    .collection .collection_inner .btn svg{
+        width: 24px !important;
+        height: 24px !important;
+    }
+}

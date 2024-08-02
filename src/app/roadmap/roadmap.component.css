@@ -1,0 +1,170 @@
+.roadmap {
+  width: 100%;
+  height: auto;
+  /* background-color: red; */
+}
+
+.roadmap .roadmap_inner {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 119.99px;
+  height: 100%;
+  /* background-color: green; */
+}
+
+.roadmap .roadmap_inner .sec_title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #fff;
+}
+
+.roadmap .roadmap_inner .sec_title span {
+  background: -webkit-linear-gradient(#2600FC, #FF00EA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadmap .roadmap_inner .card_container {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+}
+
+.roadmap .roadmap_inner .card_container .card_box {
+  position: relative;
+  padding: 40px 33px 33px 33px;
+  width: 368px;
+  height: auto;
+  border-radius: 32px;
+  border: 1.5px solid rgba(253, 253, 253, 0.34);
+}
+
+.roadmap_inner .card_container .card_box .circle {
+  position: absolute;
+  top: 11.08px;
+  right: 11.08px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(16deg);
+  border-radius: 50%;
+  background: linear-gradient(#2600FC, #FF00EA);
+
+  font-family: "Inter", sans-serif;
+  line-height: 16.2px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.roadmap_inner .card_container .card_box .circle .num {
+  line-height: 24.3px;
+  font-size: 27px;
+}
+
+.roadmap_inner .card_container .card_box .text_cont {
+  width: 100%;
+  min-height: 100px;
+}
+
+.card_container .card_box .text_cont .card-top-p {
+  margin-bottom: 29.6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#2600FC, #FF00EA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card_container .card_box .text_cont .card_title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.card_container .card_box .text_cont .info {
+  width: 100%;
+  max-width: 287px;
+  margin-top: 26px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 19px;
+  color: #B7B4BB;
+}
+
+.card_container .card_box .text_cont .line {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(253, 253, 253, 0.34);
+}
+
+.card_container .card_box .text_cont ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_container .card_box .text_cont ul li {
+  margin: 3.8px 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: start;
+}
+
+.card_container .card_box .text_cont ul li .txt {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 25.2px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.bottom_arrew {
+  margin: 130px auto 0 auto;
+  width: fit-content;
+}
+
+.bottom_arrew svg {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .roadmap .roadmap_inner .sec_title{
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .card_container .card_box .text_cont .card_title {
+    font-size: 28px;
+  }
+
+  .card_container .card_box .text_cont .info {
+    font-size: 17px;
+  }
+
+  .card_container .card_box .text_cont ul li .txt {
+    font-size: 16px;
+  }
+}

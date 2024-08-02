@@ -1,0 +1,211 @@
+.about {
+  width: 100%;
+  height: auto;
+}
+
+.about .about_inner {
+  position: relative;
+  padding-top: 120px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.about .about_inner h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #fff;
+}
+
+.about .about_inner h2 span {
+  background: -webkit-linear-gradient(#2600FC, #FF00EA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .about_inner .about_content {
+  position: relative;
+  margin-top: 80px;
+  padding-bottom: 130px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 120px;
+  flex-direction: column;
+}
+
+.about_inner .about_content .about_cont {
+  padding-block: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_inner .about_content .about_cont:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about_content .about_cont .img_box {
+  width: 50%;
+  height: auto;
+}
+
+.about_content .about_cont .img_box img {
+  width: 100%;
+  max-height: 624.98px;
+  height: 100%;
+  display: block;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.about_inner .about_content .text_cont {
+  margin-top: 34.74px;
+  margin-left: 55px;
+}
+
+.about_inner .about_content .text_cont .contid {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+
+  background: -webkit-linear-gradient(#2600FC, #FF00EA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about_inner .about_content .text_cont .title {
+  width: 100%;
+  max-width: 451px;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58.8px;
+  color: #fff;
+  text-align: left;
+}
+
+.about_inner .about_content .text_cont .info {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 495px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 19px;
+  color: #B7B4BB;
+}
+
+.about_inner .about_content .text_cont .about_card_link {
+  position: relative;
+  width: fit-content;
+  margin-top: 39px;
+  display: flex;
+  gap: 10.09px;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about_inner .about_content .text_cont .about_card_link::after {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  width: 128.09px;
+  height: 2px;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(131, 131, 131, 0.25);
+}
+
+.about_inner .about_content .text_cont .about_card_link:hover::after {
+  opacity: 1;
+}
+
+.bottom_arrew {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .about_content .about_cont .img_box {
+    min-width: 435px;
+  }
+
+  .about_inner .about_content .text_cont {
+    margin-left: 0;
+  }
+
+  .about_inner .about_content .text_cont .title {
+    font-size: 46px;
+  }
+
+  .about_inner .about_content .text_cont .info {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .about_inner .about_content .text_cont .about_card_link::after {
+    opacity: 1 !important;
+    pointer-events: initial;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .about .about_inner .about_content {
+    gap: 80px;
+  }
+
+  .about_content .about_cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about_inner .about_content .text_cont .title,
+  .about_inner .about_content .text_cont {
+    text-align: center;
+  }
+
+  .about_inner .about_content .text_cont {
+    margin-top: 40px;
+  }
+
+  .about_inner .about_content .text_cont .about_card_link {
+    margin: 39px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .about_inner h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .about_content .about_cont .img_box {
+    min-width: 0;
+    width: 95%;
+    max-width: 435px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about_inner .about_content .text_cont .title {
+    font-size: 40px;
+  }
+}
